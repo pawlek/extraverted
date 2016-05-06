@@ -24,6 +24,41 @@ article {
       -ms-transform: rotate(270deg);
       -o-transform: rotate(270deg);
       transform: rotate(270deg); }
+  article.footer .social-block {
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    background: #f7ca18;
+    position: absolute;
+    bottom: 0;
+    left: 0; }
+    article.footer .social-block .social {
+      display: block;
+      color: #1c1c1c; }
+      article.footer .social-block .social i {
+        font-size: 3vh 3vw;
+        /*&[class*="skype"]:after{
+						content: "pawlek.si";
+					}*/ }
+        article.footer .social-block .social i:after {
+          display: none; }
+        article.footer .social-block .social i[class*="facebook"]:after {
+          content: "Pavlo Voronyuk"; }
+        article.footer .social-block .social i[class*="twitter"]:after {
+          content: "@pawlek_"; }
+        article.footer .social-block .social i[class*="instagram"]:after {
+          content: "@pawlek"; }
+      article.footer .social-block .social:hover {
+        background: #1c1c1c;
+        color: #f7ca18; }
+        article.footer .social-block .social:hover i:before {
+          display: none; }
+        article.footer .social-block .social:hover i[class*="facebook"]:after,
+        article.footer .social-block .social:hover i[class*="instagram"]:after,
+        article.footer .social-block .social:hover i[class*="twitter"]:after {
+          display: block; }
+      article.footer .social-block .social #SkypeButton_Call_pawlek.si_1 {
+        color: #1c1c1c; }
   article.dark {
     background: #1c1c1c; }
     article.dark a {

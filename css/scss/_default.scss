@@ -22,6 +22,57 @@ article{
 			@include transform_rotate(270deg);
 		}
 	}
+	&.footer{
+		.social-block{
+			width: $w;
+			height: 100px;
+			line-height: 100px;
+			background: $y;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			
+			.social{
+				display: block;
+				color: $d;
+				i{
+					font-size: 3vh 3vw;
+					&:after{
+						display: none;
+					}
+					&[class*="facebook"]:after{
+						content: "Pavlo Voronyuk";
+					}
+					&[class*="twitter"]:after{
+						content: "@pawlek_";
+					}
+					&[class*="instagram"]:after{
+						content: "@pawlek";
+					}
+					/*&[class*="skype"]:after{
+						content: "pawlek.si";
+					}*/
+				}
+				&:hover{
+					background: $d;
+					color: $y;
+					i:before{
+						display: none;
+					}
+					i[class*="facebook"]:after,
+					i[class*="instagram"]:after,
+					i[class*="twitter"]:after/*,
+					i[class*="skype"]:after*/{
+						display: block;
+					}
+				}
+				#SkypeButton_Call_pawlek.si_1{
+					color: $d;
+					
+				}
+			}
+		}
+	}
 	&.dark{
 		@include dark;
 	}
