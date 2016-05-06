@@ -1,0 +1,26 @@
+{
+    "sass.enabled": false,
+    "sass.compiler": "libsass",
+    "path": {
+        "css/scss/style.scss": {
+            "sass.enabled": true,
+            "sass.options": {
+                "outputDir": "../",
+                "imagePath": null,
+                "sourceComments": false,
+                "outputStyle": "nested"
+            },
+            "linting.collapsed": true,
+            "custom.work.zIndex": 11,
+            "custom.work.workingFilesSidebar": true,
+            "custom.work.hoverSidebar": true,
+            "custom.work.tooltip": true,
+            "custom.work.listView": true,
+            "custom.work.addiconprovider": true,
+            "themes.theme": "dark-theme",
+            "styleActiveLine": true,
+            "brackets-icons.secondary": false,
+            "brackets-icons.iconset": "ionicons"
+        }
+    }
+}

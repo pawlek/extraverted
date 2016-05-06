@@ -1,0 +1,36 @@
+* {
+  text-align: center;
+  text-decoration: none; }
+
+article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 100vh; }
+  article h1 {
+    font-weight: 700;
+    font-size: 80px;
+    text-transform: uppercase; }
+    article h1 span {
+      display: inline-block;
+      position: relative;
+      top: -15px;
+      left: -30px;
+      border-top: 2px solid #f7ca18;
+      font-size: 30px;
+      -webkit-transform: rotate(270deg);
+      -moz-transform: rotate(270deg);
+      -ms-transform: rotate(270deg);
+      -o-transform: rotate(270deg);
+      transform: rotate(270deg); }
+  article.dark {
+    background: #1c1c1c; }
+    article.dark a {
+      color: #f7ca18; }
+  article.yellow {
+    background: #f7ca18; }
+    article.yellow a {
+      color: #1c1c1c; }
+
+/*# sourceMappingURL=style.css.map */

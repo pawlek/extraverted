@@ -1,0 +1,32 @@
+@mixin yellow{
+	background: $y;
+	a{
+		color: $d;
+	}
+}
+
+@mixin dark{
+	background: $d;
+	a{
+		color: $y;
+	}
+}
+
+@mixin flex{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+@mixin inline-flex{
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@mixin transform_rotate($rotate){
+	-webkit-transform: rotate($rotate);
+	-moz-transform: rotate($rotate);
+	-ms-transform: rotate($rotate);
+	-o-transform: rotate($rotate);
+	transform: rotate($rotate);
+}

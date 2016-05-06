@@ -1,0 +1,31 @@
+@import "variables";
+@import "mixins";
+*{
+	text-align: center;
+	text-decoration: none;
+}
+article{
+	@include flex;
+	position: relative;
+	height: $h;
+	h1{
+		font-weight: 700;
+		font-size: 80px;
+		text-transform: uppercase;
+		span{
+			display: inline-block;
+			position: relative;
+			top: -15px;
+			left: -30px;
+			border-top: 2px solid $y;				//variable
+			font-size: 30px;
+			@include transform_rotate(270deg);
+		}
+	}
+	&.dark{
+		@include dark;
+	}
+	&.yellow{
+		@include yellow;
+	}
+}

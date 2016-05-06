@@ -2,19 +2,10 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<title>extraverted</title>
 	<link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">
-	<style>
-		article.row{
-			height: 100vh;	
-		}
-		.dark{
-			background: #1c1c1c;
-		}
-		.yellow{
-			
-		}
-	</style>
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	<div class="container-fluid">
@@ -30,8 +21,15 @@
 		<article class="row footer yellow">
 			<div class="col-md-12">
 				<div class="row">
-					<div class="col-md-6">contacts</div>
-					<div class="col-md-12 visible-sm visible-xs">lol</div>
+					<div class="col-md-6">
+						<div class="row">
+							<div class="col-md-6 col-sm-6">contacts</div>
+							<div class="col-md-6 col-sm-6">adress</div>
+						</div>
+					</div>
+					<div class="col-md-12 visible-sm visible-xs">
+						<span class="or hint--bottom" data-hint="thanks">or write this form</span>
+					</div>
 					<div class="col-md-6">
 						<div class="row">
 							<form action="app.php" method="post">
@@ -47,8 +45,6 @@
 								<div class="col-md-12">
 									<input type="submit" value="SEND"/>
 								</div>
-								
-								
 							</form>
 						</div>
 					</div>
